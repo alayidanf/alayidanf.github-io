@@ -1,0 +1,137 @@
+---
+title: "Pengaruh Ekspor Lada Putih terhadap Nilai Tukar Rupiah"
+subtitle: "Analisis Pengaruh Ekspor Komoditi Lada Putih Indonesia ke negara Vietnam Terhadap Nilai Tukar Rupiah Tahun 2012-2021"
+author: "Alayida Nur Fitria"
+date: 2023-19-01
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+This **just** a ~~showcase~~ of what *Quarto* docs can produce. I use this part for my students. ![logo APP muncul secara random lalalala](poltekapp.jpg)
+
+## Pendahuluan
+
+### 
+
+Latar belakang
+
+Dalam perdagangan rempah dunia, lada merupakan komoditas strategis. Lada putih dan hitam merupakan dua varietas lada yang paling sering diperdagangkan di pasar global. Lada Putih Muntok adalah lada putih yang terkenal secara internasional dari Indonesia. Vietnam, Indonesia, India, Cina, dan Brasil adalah produsen dan pengekspor lada terbesar di pasar internasional. Ekspor lada nasional dari Indonesia mengalami penurunan, tumbuh rata-rata 34,02% dari tahun 2015 hingga 2018. (Statistik Perkebunan Indonesia, 2020). Mengingat 96% perkebunan lada Indonesia merupakan perkebunan rakyat, kehadiran ekspor lada Indonesia di pasar global tentunya akan menguntungkan Indonesia dalam hal perolehan devisa bagi negara dan meningkatkan perekonomian dalam negeri (Statistik Perkebunan Indonesia, 2020).
+
+Dari sisi output, lada Indonesia memiliki tren kenaikan yang sangat signifikan antara tahun 2015 hingga 2019. Produksi lada di Indonesia meningkat sebesar 5,93% di tahun 2016 menjadi 86,3 ribu ton, naik dari 81,5 ribu ton di tahun 2015. Produksi lada di Indonesia meningkat pada masing-masing dua tahun berikutnya, pada tahun 2017 masing-masing sebesar 1,92% dan 0,82%, namun tidak signifikan dibandingkan tahun 2016. Produksi lada di Indonesia mencapai 88,9 ribu ton pada tahun 2019.
+
+Di pasar global, ekspor lada diklasifikasikan ke dalam beberapa kode HS yaitu HS 09041110 (lada putih tidak hancur dan tidak ditumbuk atau dalam bentuk butiran), HS 09041290 (lada bubuk lainnya). Pada tahun 2018 ekspor lada Indonesia terbesar adalah ekspor lada dengan kode HS 09041110 dengan nilai sebesar 95.30 juta USD (28.05 ribu ton).
+
+Peningkatan volume perdagangan internasional dibarengi dengan peningkatan jumlah permintaan yang akan dilakukan di sejumlah negara. Menurut data United Nations Commodity Trade (UN Comtrade), Indonesia mengekspor barang ke sejumlah negara di dunia. Pada tahun 2018, tiga negara pengekspor terbesar adalah Vietnam (23.278 ton), India (5.689 ton), dan Amerika (4.459 ton). Terlepas dari kenyataan bahwa Indonesia telah mengirim lada ke Vietnam selama beberapa tahun sekarang, pada 1 Januari tahun ini, pemerintah mengatakan bahwa hal itu tidak akan terjadi lagi karena Vietnam sekarang akan mengirim lada dari Indonesia ke India, bukan Vietnam. Petani dapat memperoleh keuntungan dari pergeseran ini karena mereka dapat menjual barang mereka dengan harga tinggi (Wahyudi, 2019). Vietnam menjadi pesaing lada Indonesia di pasar India dan global padahal Vietnam merupakan tujuan ekspor lada Indonesia (UN Comtrade, 2019).
+
+Pengaruh ekspor lada putih ke negara Vietnam terhadap nilai tukar rupiah ekspor lada putih berpengaruh pada nilai tukar rupiah, hal tersebut sesuai dengan teori balance of payment, ekspor netto sering menjadi faktor yang dapat mendorong naik dan turunnya kurs mata uang suatu negara. Nilai koefisien ekspor terbesar 8,58258E+13, hal ini berarti kenaikan perubahan ekspor neto mengakibatkan nilai kurs dolar terhadap masing-masing negara. Dengan hasil ini berarti pendapatan ekspor berpengaruh positif terhadap nilai tukar.
+
+### Ruang lingkup
+
+Pada peniliat ini komoditi unggulan perkebunan yang digunakan adalah Lada Putih. pada penelitian Lada Putih ini variabel yang digunakan adalah pasar internasional. Selain itu digunakan variabel nilai tukar uang negara kompetitor yaitu nilai tukar uang negara Vietnam.
+
+### Rumusan masalah
+
+Berdasarkan uraian latar belakang masalah yang telah dijabarkan, maka terdapat beberapa indikator yang menjadi rumusan masalah dalam penelitian ini, adapun rumusan masalah tersebut adalah sebagai berikut : 1. Apakah nilai tukar rupiah berpengaruh terhadap nilai ekspor lada putih Indonesia ke negara Vietnam dalam kurun waktu 2012-2021?
+
+### Tujuan dan manfaat penelitian
+
+Adapun yang menjadi tujuan dari penelitian ini adalah : 1. Untuk mengetahui dan menganalisis seberapa besar pengaruh ekspor komoditi lada putih indonesia ke negara vietnam terhadap nilai tukar rupiah pada tahun 2011-2021. Adapun manfaat yang diperoleh dari penelitian ini adalah: 1. Bagi peneliti Bertambahnya ilmu pengetahuan dan wawasan terkait tema yang diteliti oleh peneliti. 2. Bagi Masyarakat Memberikan informasi kepada masyarakat mengenai pengaruh ekspor komoditi lada putih indonesia ke negara Vietnam terhadap nilai tukar rupiah pada tahun 2011-2021.
+
+```{r}
+#| warning: false
+#| echo: true
+library(tidyverse)
+library(readxl)
+library(WDI) # tambahkan library lain jika diperlukan
+```
+
+## Studi pustaka
+
+Tanaman lada merupakan salah satu tanaman perkebunan yang sudah lama ditanam oleh masyarakat Indonesia, bahkan sebelum kemerdekaan, menurut Sarpian (Lilik Wuriyanto, 2012). Di pulau Jawa, lada sudah ditanam di Indonesia sejak abad ke-16, meski dalam skala yang sederhana. Pertumbuhan perkebunan lada berpindah dari pulau Jawa ke pulau Sumatera dan Kalimantan sekitar awal abad ke-18, ketika mulai ditanam secara besar-besaran. Saat ini, tanaman lada dapat ditemukan di seluruh Indonesia.
+
+Menurut Nazir (1988:38), kurs adalah harga satu satuan mata uang asing dalam uang dalam negeri. Dengan kata lain harga suatu mata uang yang ditukarkan dengan mata uang lainnya. Nilai tukar yang sering digunakan adalah nilai tukar rupiah terhadap dollar.
+
+Menurut Bambang Triyoso dan Susilo Utomo (2004), pengertian ekspor adalah sistem perdagangan dengan cara mengeluarkan barang dari dalam negeri ke luar negeri dengan memenuhi ketentuan yang berlaku. Kegiatan ekspor mencakup semua barang dan jasa yang dijual oleh sebuah negara ke negara lain, termasuk diantara barang-barang, asuransi, dan jasa-jasa pada periode tertentu.
+
+Menurut Serlika dan Rio, perdagangan internasional memiliki hubungan yang erat dengan keuangan. Hal ini dikarenakan perdagangan internasional serta keuangan tidak dapat dipisahkan antara satu dengan lainnya, karena memiliki keterkaitan.
+
+## Metode penelitian
+
+### Data
+
+| tahun | Vietnam        | Indonesia      |
+|-------|----------------|----------------|
+| 2012  | 384742612960   | 24824461584997 |
+| 2013  | 20306845000    | 30712106775559 |
+| 2014  | 27667335000    | 41844124319419 |
+| 2015  | 1226716807712  | 79150536600121 |
+| 2016  | 56747994766000 | 85825763408953 |
+| 2017  | 1158920480000  | 74776164549304 |
+| 2018  | 430136000      | 65053841500302 |
+| 2019  | 7626391520000  | 49207199032062 |
+| 2020  | 419824464000   | 27088021778584 |
+| 2021  | 515633120000   | 33269812462190 |
+
+Jenis sumber data yang akan diolah dan dianalisis dalam penelitian ini adalah data ekspor Lada Putih tahun 2012-2021 dan merupakan data sekunder, yaitu data yang diolah pihak lain sebelumnya dari instansi yang berwenang dan terkait dengan sektor moneter yaitu Badan Pusat Statistik serta jurnal-jurnal ilmiah, website di internet, artikel dan literatur -literatur yang relevan dalam penelitian ini.
+
+```{r}
+#| label: fig-mpg
+#| fig-cap: "City and highway mileage for 38 popular models of cars.Color by number of cylinders"
+ggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +
+  geom_point(alpha = 0.5, size = 2) +
+  scale_color_viridis_c() +
+  theme_minimal()
+```
+
+### Metode analisis
+
+Metode analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif dan penjabaran deskriptif. teknik analisis kuantitatif merupakan analisis yang dilakukan dengan perhitungan angka-angka faktor yang mempengaruhi indeks nilai tukar rupiah terhadap Dong Vietnam yaitu nilai ekspor Lada Putih Indonesia ke negara Vietnam. pendekatan yang dilakukan adalah kuantitatif dengan mengaplikasikan model regresi linear secara spesifik, model tersebut dapat disajikan sebagai berikut:
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah hwy dan $x_t$ adalah cty.
+
+Di mana: Yi adalah nilai tukar USD tr=erhadap mata uang negara lain., B0 adalah koefisien konstanta; B1 adalah parameter; Xi adalah nilai ekspor dan Ui adalah error term.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+Pada bagian ini dapat ditampilkan data dan visualisasi data yang telah dikumpulkan. x (Vietnam) y (Indonesia) 3,84743E+11 2,48245E+13 20306845000 3,07121E+13 27667335000 4,18441E+13 1,22672E+12 7,91505E+13 5,6748E+13 8,58258E+13 1,15892E+12 7,47762E+13 430136000 6,50538E+13 7,62639E+12 4,92072E+13 4,19824E+11 2,7088E+13 5,15633E+11 3,32698E+13
+
+Vietnam dan lada Indonesia keduanya berkinerja baik dalam hal ekspor. Hal ini disebabkan oleh fakta bahwa nilai RCA yang dibuat menunjukkan bahwa lada ekspor ke India oleh Indonesia (6,76) dan Vietnam (75,30) memiliki keunggulan komparatif yang signifikan (4 RCA). Namun, berdasarkan hasilnya, dapat diklaim dalam sapuan luas bahwa Indonesia kurang kompetitif daripada Vietnam.
+
+### Analisis masalah
+
+Registered S3 methods overwritten by 'dbplyr': method from print.tbl_lazy\
+print.tbl_sql\
+── Attaching packages ──────────────────── tidyverse 1.3.2 ──✔ ggplot2 3.3.6 ✔ purrr 0.3.5 ✔ tibble 3.1.8 ✔ dplyr 1.0.10 ✔ tidyr 1.2.1 ✔ stringr 1.4.1 ✔ readr 2.1.3 ✔ forcats 0.5.2 ── Conflicts ─────────────────────── tidyverse_conflicts() ── ✖ dplyr::filter() masks stats::filter() ✖ dplyr::lag() masks stats::lag() \> library(readxl) \> library(WDI) \# tambahkan library lain jika diperlukan \> #\| label: fig-mpg \> #\| fig-cap: "City and highway mileage for 38 popular models of cars.Color by number of cylinders" \> ggplot(mpg, aes(x = hwy, y = cty, color = cyl)) + + geom_point(alpha = 0.5, size = 2) + + scale_color_viridis_c() + + theme_minimal() \> reg\<-lm(hwy\~cty,data=mpg) \> summary(reg)
+
+```{r}
+reg<-lm(hwy~cty,data=mpg)
+summary(reg)
+```
+
+```{r}
+library(readxl)
+dat<-read_excel("latihan 1.xlsx")
+reg1<-lm(y~x,data=dat)
+summary(reg1)
+```
+
+## Kesimpulan
+
+Beberapa studi dan hasil diskusi dihasilkan dengan menggunakan data tersebut. Simpulan memuat uraian tentang temuan penelitian dan rangkuman pembahasan. Berikut temuan investigasi kuantitas lada putih yang diekspor Indonesia ke Vietnam: 1. Volume ekspor lada putih Indonesia ke Vietnam memiliki hubungan positif dan pengaruh yang kecil dari nilai tukar Rupiah. 2. Dari tahun 2012 hingga 2021, atau sembilan tahun terakhir, pengiriman lada putih ke Vietnam cenderung berfluktuasi, dengan penurunan volume dan nilai yang signifikan pada tahun 2018.
+
+## Referensi
+
+Fadilah, F., (2020). Pengertian dan Teori Perdagangan Internasional Menurut Para Ahli. Gramedia Blog. Pengertian dan Teori Perdagangan Internasional Menurut Para Ahli - Gramedia Literasi
+
+Harmony. (24 Februari 2021). Kurs: Pengertian, Jenis Dan Hal-Hal Yang Mempengaruhinya. Blog Finance. https://www.harmony.co.id/blog/kurs-pengertian-jenis-dan-hal-hal-yang-mempengaruhinya#:\~:text=Pengertian%20Kurs.%20Adapun%20beberapa%20pengertian%20menurut%20para%20ahli%2C,sering%20digunakan%20adalah%20nilai%20tukar%20rupiah%20terhadap%20dollar.
+
+Media, Admin. (26 Desember 2022). Pengertian Ekspor Menurut Para Ahli. Creator Media. https://creatormedia.my.id/pengertian-ekspor-menurut-para-ahli-terbaru/
+
+Badan Pusat Statistik. (29 Juli 2022). Ekspor Lada Putih Menurut Negara Tujuan Tahun 2012-2021. Statistik Dasar. https://bps.go.id/subject/8/ekspor-impor.html#subjekViewTab3
